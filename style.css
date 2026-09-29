@@ -5,8 +5,19 @@
     color: white;
 }
 
-body{
-    background-image: linear-gradient(to right, #0a0a0a, #252525, #525252);
+body {
+    background:
+        radial-gradient(
+            ellipse at 50% 40%,
+            #181818 0%,
+            #0b0b0b 35%,
+            #030303 70%,
+            #000000 100%
+        );
+
+    color: white;
+    overflow-x: hidden;
+    min-height: 100vh;
 }
 
 .name{
@@ -59,3 +70,50 @@ nav a{
     text-align: center;
 }
 
+#demon-bg {
+    position: fixed;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
+
+    overflow: hidden;
+    pointer-events: none;
+}
+
+
+/* =========================
+   DEMON LORD COLUMN
+========================= */
+
+.demon {
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    font-family: monospace;
+    font-weight: bold;
+
+    font-size: 16px;
+    line-height: 1.05;
+
+    color: rgba(0, 183, 255, 0.3);
+
+    text-shadow:
+        0 0 5px rgba(0, 0, 0, 0.5),
+        0 0 12px rgba(41, 1, 1, 0.25);
+
+    pointer-events: none;
+}
+
+
+/* Space between DEMON and LORD */
+
+.demon .space {
+    height: 12px;
+}
