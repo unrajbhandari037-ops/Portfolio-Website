@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:
+        radial-gradient(
+            ellipse at 50% 40%,
+            #181818 0%,
+            #0b0b0b 35%,
+            #030303 70%,
+            #000000 100%
+        );
+
+    color: white;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.name{
+    height: 5vh;
+    text-align: center;
+    align-content: center;
+    color: white;
+
+}
+
+nav{
+    padding-left: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar{
+    height: 100%;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 2rem;
+}
+
+.container{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box{
+    height: 80vh;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+body {
+    background: red !important;
+}
+
