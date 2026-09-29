@@ -60,7 +60,7 @@ nav a{
 }
 
 .me{
-    background-image: url("images/me.jpg");
+    background-image: url("./images/me.jpg");
     background-size: cover;
     background-position: center;
 }
