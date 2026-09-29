@@ -60,6 +60,12 @@ nav a{
 }
 
 .me{
+    height: 80vh;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
     background-image: url("./images/me.jpg");
     background-size: cover;
     background-position: center;
