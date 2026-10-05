@@ -1,0 +1,107 @@
+
+    body {
+    margin: 0;
+    overflow: hidden;
+    background: #87ceeb;
+}
+
+.intro {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enter {
+    position: absolute;
+    padding: 2vh 2VH;
+    font-size: 3vh;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    opacity: 0;
+    animation: buttonShow 2s ease forwards;
+    animation-delay: 3s;
+}
+.clouds {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.cloud {
+    position: absolute;
+    width: 300px;
+    bottom: -300px;
+    opacity: 0.8;
+    animation: cloudMove linear forwards;
+}
+
+/* Different positions */
+.cloud1 {
+    left: 5%;
+    width: 350px;
+    animation-duration: 8s;
+    animation-delay: 0s;
+}
+
+.cloud2 {
+    left: 25%;
+    width: 250px;
+    animation-duration: 10s;
+    animation-delay: 1s;
+}
+
+.cloud3 {
+    left: 50%;
+    width: 400px;
+    animation-duration: 9s;
+    animation-delay: 0.5s;
+}
+
+.cloud4 {
+    left: 70%;
+    width: 280px;
+    animation-duration: 11s;
+    animation-delay: 2s;
+}
+
+.cloud5 {
+    left: 85%;
+    width: 350px;
+    animation-duration: 8.5s;
+    animation-delay: 1.5s;
+}
+
+@keyframes cloudMove {
+    from {
+        transform: translatex(0);
+    }
+
+    to {
+        transform: translatex(100vw);
+    }
+}
+
+/* Enter button appears after clouds start moving */
+.enter-button {
+    position: absolute;
+    z-index: -10;
+    opacity: 0;
+    animation: buttonShow 2s ease forwards;
+    animation-delay: 4s;
+}
+
+@keyframes buttonShow {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

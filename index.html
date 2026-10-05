@@ -4,25 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <style>
-    button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 15px 30px;
-    font-size: 18px;
-    cursor: pointer;
-    }
-  </style>
+  <link rel="icon" type="image/png" href="./favicon.jpg">
+  <!-- linking css file -->
+  <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-  <button onclick="myFunction()">Enter</button>
+  <div class="intro">
+    <div>
+      <img src="./images/me.jpg" class="cloud cloud1">
+      <img src="./images/me.jpg" class="cloud cloud2">
+      <img src="./images/me.jpg" class="cloud cloud3">
+      <img src="./images/me.jpg" class="cloud cloud4">
+      <img src="./images/me.jpg" class="cloud cloud5">
+    </div>
+    <div>
+      <img src="./images/me.jpg" class="cloud cloud1">
+      <img src="./images/me.jpg" class="cloud cloud2">
+      <img src="./images/me.jpg" class="cloud cloud3">
+      <img src="./images/me.jpg" class="cloud cloud4">
+      <img src="./images/me.jpg" class="cloud cloud5">
+    </div>
+    <button class="enter" onclick="window.location.href='home.html'">
+        ENTER
+    </button>
+  </div>
 
-  <script>
-    function myFunction() {
-      window.location.href = "Main.html";
-    }
-</script>
 </body>
+
+
 </html>
