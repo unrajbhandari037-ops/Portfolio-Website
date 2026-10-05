@@ -1,46 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="icon" type="image/png" href="./favicon.jpg">
-
-    <!-- linking css file -->
-    <link rel="stylesheet" href="./stylev2.css">
-    <audio id="bgMusic" loop>
-    <source src="./audio/bg_music.mp3" type="audio/mpeg">
-    </audio>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    }
+  </style>
 </head>
 <body>
+  <button onclick="myFunction()">Enter</button>
 
-  <h1 class="name">Un rajbhandari</h1>
-  <nav>
-    <div class="navbar">
-      <a href="./index.html">Home</a>
-      <a href=""></a>
-      <a href=""></a>
-    </div>
-  </nav>
-  <div class="container">
-    <div class="box">
-      <img src="./images/me.jpg" alt="Un rajbhandari" style="width: 100%; height: 100%;">
-    </div>
-    <div class="box">
-      <model-viewer 
-        src="./assets/chibi_bunny_girl.glb" 
-        auto-rotate 
-        camera-controls
-        disable-zoom
-        style="width: 100%; 
-        height: 100%  ;">
-      </model-viewer>
-    </div>
-  </div>
-
-  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.3.1/model-viewer.min.js"></script>
-  <script src="./mainv2.js"></script>
-
+  <script>
+    function myFunction() {
+      window.location.href = "Main.html";
+    }
+</script>
 </body>
 </html>
